@@ -24,7 +24,7 @@ i686-elf-gcc -c kernel/main.c -o kernel/main.o -std=gnu99 -ffreestanding -O2 -Wa
 
 link everything up
 ```
-i686-elf-gcc -T linker/linker.ld -o kernel -ffreestanding -O2 -nostdlib boot/boot.o kernel/kernel.o -lgcc
+i686-elf-gcc -T linker/linker.ld -o iso/boot/kernel.bin -ffreestanding -O2 -nostdlib boot/boot.o kernel/kernel.o -lgcc
 ```
 
 now finally to compile the iso:
