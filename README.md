@@ -19,7 +19,7 @@ i686-elf-as boot/boot.s -o boot/boot.o
 
 the main kernel
 ```
-i686-elf-gcc -c main.c -o main.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
+i686-elf-gcc -c kernel/main.c -o kernel/main.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 ```
 
 link everything up
