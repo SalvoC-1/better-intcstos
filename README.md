@@ -29,7 +29,7 @@ i686-elf-gcc -T linker/linker.ld -o iso/boot/kernel.bin -ffreestanding -O2 -nost
 
 now finally to compile the iso:
 ```
-grub-mkrescue intcst.iso iso/
+grub-mkrescue -o intcst.iso iso/
 ```
 
 ## tools you need
